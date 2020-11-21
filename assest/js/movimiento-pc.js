@@ -2,7 +2,7 @@ window.onload = function()
 {
 
     document.onkeypress = teclado.precionar_teclas;
-    setInterval( jugar, 1000 );
+    setInterval( jugar, 100 );
 
 }
 
@@ -11,8 +11,6 @@ var teclado =
 
     precionar_teclas : function()
     {
-
-        valorCero;
 
         var tecla_up = event.key;
 

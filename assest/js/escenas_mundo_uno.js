@@ -10,7 +10,6 @@ var cambiarMundo =
         if(estilow == -330 +"px")
         {
         
-            // console.log("Funciona");
             mundo.style.backgroundColor = "green";
             player.style.top = 950+"px";
                 

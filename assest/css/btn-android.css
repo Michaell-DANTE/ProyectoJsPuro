@@ -1,0 +1,51 @@
+.btn
+{
+
+    background-color: darkblue;
+    color: white;
+
+}
+
+#izquierda-btn
+{
+
+    position: absolute;
+    left: 57%;
+    top: 72.5%;
+
+}
+
+#derecha-btn
+{
+
+    position: absolute;
+    left: 22%;
+    top: 72.5%;
+
+}
+
+#arriba-btn
+{
+
+    position: absolute;
+    left: 44%;
+    top: 63%;
+
+}
+
+#abajo-btn
+{
+
+    position: absolute;
+    left: 44%;
+    top: 83%;
+
+}
+
+.btn:hover
+{
+
+    color: white;
+
+}
+

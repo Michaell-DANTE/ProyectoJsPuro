@@ -1,0 +1,30 @@
+@media screen and (min-width:  1280px)
+{
+
+    .btn
+    {
+
+        visibility: hidden;
+        
+    }
+
+
+}
+
+@media screen and (max-width:  414px)
+{
+
+
+    #contenedor
+    {
+
+    height: 100%;
+    width: 100%;
+    background-color: cornflowerblue;
+    position: absolute;
+
+    }
+
+
+}
+

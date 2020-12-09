@@ -1,3 +1,13 @@
+/**
+ * Autor Michaell Yovanny Mendoza Pacheco (@DANTE)
+ * "Somos lo que hacemos dia a dia de modo que la excelencia no es un acto, sino un hábito" - Aristóteles
+*/
+
+/**
+ * function.onload
+ * Carga todo el entorno del juego y de igual manera lo actualiza.
+ * @return salir
+*/
 window.onload = function()
 {
 
@@ -9,11 +19,17 @@ window.onload = function()
 var teclado = 
 {
 
+    /**
+     * precionar_teclas
+     * Permite que el jugador avance en un dispositivo con teclado - capturando asi las teclas (w-s-d-a) para poder moverser.
+     * @return salir
+    */
     precionar_teclas : function()
     {
 
         var tecla_up = event.key;
 
+        //Permite el desplazarse hacia abajo con el teclado.
         if(tecla_up == "s" || tecla_up == "S")
         {
     
@@ -24,7 +40,7 @@ var teclado =
     
         }
     
-    
+        //Permite el desplazarse hacia arriba con el teclado.  
         if(tecla_up == "w" || tecla_up == "W")
         {
     
@@ -40,17 +56,19 @@ var teclado =
     
         }
     
-    
+        //Permite el desplazarse hacia izquierda con el teclado.
         if(tecla_up == "a" || tecla_up == "A")
         {
     
             left -= 10;   
             console.log("para izquierda");
-            player.style.marginLeft = left+"px";
+            estiloA = player.style.marginLeft = left+"px";
+            console.log(estiloA);
+            colision.salirCalle(estiloD, estiloA);
     
         }
     
-    
+        //Permite el desplazarse hacia derecha con el teclado.    
         if(tecla_up == "d" || tecla_up == "D")
         {
     
@@ -58,19 +76,14 @@ var teclado =
             var number = left += 10;
             console.log(number); 
             console.log("para derecha");
-            this.estilo = player.style.marginLeft = left+"px"; 
-            console.log("Estilos: " + this.estilo);
+            estiloD = player.style.marginLeft = left+"px"; 
+            colision.salirCalle(estiloD, estiloA);
+            console.log("Estilos: " + estiloD);
     
-            // if(this.estilo == 200 +"px")
-            // {
-    
-            //     console.log("Funciona");
-            //     mundo.style.backgroundColor = "green";
-                
-    
-            // } 
     
         }
+
+        return salir;
 
     }
 

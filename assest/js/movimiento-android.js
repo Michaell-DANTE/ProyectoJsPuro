@@ -29,7 +29,7 @@ function derecha()
 
     left += 10;   
     console.log("para derecha");
-    player.style.marginLeft = left+"px";
+    estiloD = player.style.marginLeft = left+"px";
 
     return salir;
 
@@ -45,8 +45,10 @@ function arriba()
 
     up -= 10;   
     console.log("para arriba");
-    player.style.marginTop = up+"px";
-
+    estilow = player.style.marginTop = up+"px";
+    cambiarMundo.escenaDos(estilow, mundo, player, señal);
+    cambiarMundo.escenaUno(estilow, mundo, player);
+    alerta.alertaNoPasar(estilow);
     return salir;
 
 }
@@ -66,3 +68,5 @@ function abajo()
     return salir;
 
 }
+
+colision.chocarObjeto(estilow, estiloD, player);

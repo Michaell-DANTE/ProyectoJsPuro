@@ -20,11 +20,13 @@ var cambiarMundo =
 
         if(estilow == -330 +"px")
         {
-        
+
+
             mundo.style.backgroundColor = "green";
             player.style.top = 950+"px";
+              
                 
-        } 
+        }
 
         return salir;
 
@@ -39,7 +41,7 @@ var cambiarMundo =
      * @param  mixed player
      * @return salir
     */
-    escenaDos : function(estilow, mundo, player)
+    escenaDos : function(estilow, mundo, player, señal)
     {
 
         if(estilow == -950 +"px")
@@ -48,6 +50,7 @@ var cambiarMundo =
             console.log("Funciona");
             mundo.style.backgroundColor = "orange";
             player.style.top = 1570+"px";
+            señal.style.visibility = "visible"; 
                 
         } 
         

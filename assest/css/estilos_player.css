@@ -38,3 +38,21 @@ body
     top: 0%;
 
 }
+
+#señal img
+{
+
+    width: 100px;
+    text-align: center;
+    position: absolute;
+    left: 785px;
+    top: 30px;
+
+}
+
+#no_pase
+{
+
+    visibility: hidden;
+
+}

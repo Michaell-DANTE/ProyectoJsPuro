@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assest/boostrap/css/bootstrap.min.css">
+    <script src="assest/plugins/sweetalert2/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="assest/plugins/sweetalert2/sweetalert2.min.css">
     <link rel="stylesheet" href="assest/css/estilos_mundo.css">
     <link rel="stylesheet" href="assest/css/estilos_player.css">
     <link rel="stylesheet" href="assest/css/estilo_mostrar_android.css">
@@ -29,6 +31,18 @@
 
         </div>
 
+        <div id="señal">
+
+            <img id="no_pase" src="assest/img/no_pase.png">
+
+        </div>
+
+        <div id="sonido">
+
+            
+
+        </div>
+
         <button id="izquierda-btn" class="btn" onclick="derecha()">Derecha</button>
         <button id="derecha-btn" class="btn" onclick="izquierda()">Izquierda</button>
         <button id="abajo-btn" class="btn" onclick="abajo()">Abajo</button>
@@ -39,15 +53,16 @@
     </div>
 
     <script src="assest/boostrap/js/bootstrap.min.js"></script>
-    
     <script src="assest/js/cargar_variables.js"></script>
     <script src="assest/js/movimiento-pc.js"></script>
+    <script src="assest/js/sonidos.js"></script>
     <script src="assest/js/movimiento-android.js"></script>
     <script src="assest/js/colision-prueva.js"></script>
     <script src="assest/js/escenas_mundo_uno.js"></script>
     <script src="assest/js/inteligencia_artificial.js"></script>
     <script src="assest/js/cargar_inteligencia.js"></script>
     <script src="assest/js/desaparecer_enemigos_mundo.js"></script>
+    <script src="assest/js/alerta_peligro.js"></script>
 
 </body>
 </html>

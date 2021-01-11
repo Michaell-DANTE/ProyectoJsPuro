@@ -50,3 +50,35 @@ body
 
 
 }
+
+
+
+@media screen and (max-width:  414px)
+{
+
+
+    #señal img
+    {
+    
+    width: 80px;
+    text-align: center;
+    position: absolute;
+    left: 220px;
+    top: 30px;
+    
+    }
+
+    #enemigos img
+    {
+    
+        width: 85px;
+        transform: rotate(270deg);
+        height: 35px;
+        text-align: center;
+        position: absolute;
+        left: 45%;
+        top: 0%;
+    
+    }
+
+}

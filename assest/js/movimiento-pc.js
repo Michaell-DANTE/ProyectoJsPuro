@@ -13,6 +13,7 @@ window.onload = function()
 
     document.onkeypress = teclado.precionar_teclas;
     setInterval( jugar, 100 );
+  
 
 }
 
@@ -33,7 +34,7 @@ var teclado =
         if(tecla_up == "s" || tecla_up == "S")
         {
     
-            up += 10;   
+            up += 20;   
             console.log("para abajo");
             estilos = player.style.marginTop = up+"px";
             console.log(estilos);
@@ -44,15 +45,28 @@ var teclado =
         if(tecla_up == "w" || tecla_up == "W")
         {
     
-            up -= 10;   
+            up -= 10;
+            var sentencia = (up)*(-1);   
             console.log("para arriba");
             estilow = player.style.marginTop = up+"px";
+
             console.log(estilow);
-
-            cambiarMundo.escenaDos(estilow, mundo, player);
-            cambiarMundo.escenaUno(estilow, mundo, player);
-
+            console.log(sentencia);
             
+
+            cambiarMundo.escenaDos(estilow, mundo, player, señal);
+            cambiarMundo.escenaUno(estilow, mundo, player);
+            alerta.alertaNoPasar(estilow);
+            
+            var pos = true;
+            if(pos == false){
+
+
+            }else{
+                
+                sonidos.sonidoCoche(sonido);
+
+            }
     
         }
     
@@ -60,11 +74,11 @@ var teclado =
         if(tecla_up == "a" || tecla_up == "A")
         {
     
-            left -= 10;   
+            left -= 20;   
             console.log("para izquierda");
             estiloA = player.style.marginLeft = left+"px";
             console.log(estiloA);
-            colision.salirCalle(estiloD, estiloA);
+            // colision.salirCalle(estiloD, estiloA);
     
         }
     
@@ -77,11 +91,14 @@ var teclado =
             console.log(number); 
             console.log("para derecha");
             estiloD = player.style.marginLeft = left+"px"; 
-            colision.salirCalle(estiloD, estiloA);
+            // colision.salirCalle(estiloD, estiloA);
             console.log("Estilos: " + estiloD);
     
     
         }
+
+
+        colision.chocarObjeto(estilow, estiloD, player, estiloA);
 
         return salir;
 
